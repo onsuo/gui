@@ -7,3 +7,4 @@
 ### 사용된 package 목록
 
 - tkinter
+- keyboard
