@@ -86,12 +86,16 @@ class Application(tk.Frame):
             self.creates.append(tk.BooleanVar())
             self.creates[y].set(y <= self.default_item_count)
 
-            chk1 = ttk.Checkbutton(self.control_panel, variable=self.creates[y], command=self.layout_items)
+            chk1 = ttk.Checkbutton(
+                self.control_panel, variable=self.creates[y], command=self.layout_items
+            )
             chk1.grid(column=y, row=1)
 
             self.expands.append(tk.BooleanVar())
             self.expands[y].set(False)
-            chk2 = ttk.Checkbutton(self.control_panel, variable=self.expands[y], command=self.layout_items)
+            chk2 = ttk.Checkbutton(
+                self.control_panel, variable=self.expands[y], command=self.layout_items
+            )
             chk2.grid(column=y, row=4)
 
     def layout_items(self, *args):

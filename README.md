@@ -6,5 +6,5 @@
 
 ### 사용된 package 목록
 
-- tkinter
-- keyboard
+- tkinter (python=v3.10.8)
+- keyboard (v0.13.5)
